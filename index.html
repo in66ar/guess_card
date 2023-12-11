@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Kichelle Momohara-Pelous">
+    <meta name="description" content="A pokemon themed matching game">
+    <meta name="keywords" content="kichelle, momohara-pelous, pokemon matching game, game, portfolio">
+    
+    <title>Game Tebak Angka</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Game Tebak Angka</h1>
+    </header>
+    <section id="game-container">
+      <div id="ui-container">
+        <h3>Balikan: <span id="flip-count">0</span></h3>
+        <h3>Benar: <span id="match-count">0</span></h3>
+      </div>
+      <div id="card-container">
+        <!-- Uncomment the next four lines to help you experiment. But be sure to comment it back out before finalizing your app, since your JavaScript should be adding these elements instead! -->
+        <!-- <div class="card">
+          <div class="card-down"></div>
+          <div class="card-up"></div>
+        </div> -->
+      </div>
+      <!-- Element untuk pesan kemenangan -->
+      <div id="win-message" style="display: none;">
+        <h2>Kamu Menang!</h2>
+      </div>
+
+      <audio id="click_sound">
+        <source src="audio/click.wav" type="audio/wav" />
+      </audio>
+
+      <audio id="match_sound">
+        <source src="audio/match.wav" type="audio/wav" />
+      </audio>
+
+      <audio id="win_sound">
+        <source src="audio/win.wav" type="audio/wav" />
+      </audio>
+    </section>
+    <script src="tests.js"></script>
+    <script type = "text/JavaScript" src = "https://underscorejs.org/underscore-min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
